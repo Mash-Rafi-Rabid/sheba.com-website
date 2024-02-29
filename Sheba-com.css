@@ -96,6 +96,9 @@
    text-decoration: none;
    color: #fff;
   }
+  .mobile-header{
+   display: none;
+  }
   /*------------------
       main section
    ------------------*/
@@ -209,7 +212,7 @@
    }
 
    .card-hding{
-      
+      margin-top: 3%;
    }
    .cards{
       width: 224px;
@@ -342,5 +345,118 @@
       font-size: 27px;
       color: black;
     }
+    /*--------------------
+     responsive mobile
+     -------------------*/
+     @media (max-width:477px) {
+      .dekstop-header{
+         display: none;
+      }
+      /* mobile header */
+      .mobile-header{
+         display: block;
+      }
+      .top-header{
+         width: 100%;
+         padding: 1% 5%;
+         background-color: #008069;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      .top-header .logo{
+         width: 70%;
+      }
+      .top-header .logo p{
+         color: #ffffff;
+         margin: 0;
+      }
+      .top-header .logo .logo-char{
+         font-size: 1.7rem;
+      }
+      .logo-char span{
+         color: red;
+      }
+      .next-header{
+         width: 100%;
+      }
+      .content-nh {
+         width: 100%;
+         padding:5px 25px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         border-radius: 30px;
+         background-color: #eef3f8;
+      }
+      .hand-berger{
+         font-size: 25px;
+         width: 10%;
+      }
+      .input-text{
+         width: 80%;
+      }
+      .input-text input{
+         width: 100%;
+         height: 100%;
+         font-size: 19px;
+         border: 0;
+         background-color: #eef3f8;
+      }
+      .input-text input:focus{
+         outline: none;
+         bottom: 0;
+      }
+      .search-icon{
+         width: 10%;
+         font-size: 25px;
+      }
+
+
+      /* main section */
+      .side-bar{
+         display: none;
+      }
+      .main-fixed{
+         position: static;
+         width: 100%;
+         padding: 0% 2% 1%;
+      }
+      /* card section */
+      .card-row{
+         grid-template-columns: repeat(2,0fr);
+         grid-template-rows: repeat(2,0fr);
+         padding-bottom: 10%;
+      }
+      .cards{
+         width: 180px;
+      }
+      .card-image{
+         padding: 5px;
+      }
+      .card-tittle {
+         padding: 0 5px;
+         font-size: 13px;
+      }
+      .card-info {
+         padding: 0 5px;
+      }
+      /* footer section */
+      .footer-raw {
+         grid-column: 1/ span 2;
+         grid-row: 3;
+         width: 100%;
+         padding: 5%;
+      }
+      .footer-section {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 2%;
+         padding: 5%;
+      }
+
+
+
+
+     }
 
 
