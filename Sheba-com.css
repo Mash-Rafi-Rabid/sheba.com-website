@@ -182,11 +182,34 @@
     -------------*/
    .card-section{
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2%;
+   }
+   #card-carousel,#card-carousel-1,#card-carousel-2{
+      width: 100%;
+   }
+   .carousel-control-next,
+   .carousel-control-prev{
+      width: 3% !important;
+      height: 6%;
+      top: 50% !important;
+      background-color:rgb(16 132 126) ;
+   }
+   .card-row{
       display: grid;
       grid-template-columns: repeat(4,0fr);
-      justify-content: center;
+      grid-auto-flow: column;
       gap: 4%;
-      padding-top: 2%;
+      width: 100%;
+      justify-content:space-around;
+      margin: 3% auto;
+   }
+
+   .card-hding{
+      
    }
    .cards{
       width: 224px;
@@ -245,7 +268,7 @@
     .footer-section{
       background-color: #f2f5f5;
       width: 100%;
-      margin-top: 15%;
+      margin-top: 10%;
       display: grid;
       grid-template-columns: repeat(4,1fr);
       gap: 2%;
